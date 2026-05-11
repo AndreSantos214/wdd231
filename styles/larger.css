@@ -9,8 +9,7 @@
 }
 @media only screen and (min-width: 38rem) {
   main,
-  nav,
-  footer {
+  nav {
     max-width: 900px;
     margin: 0 auto;
   }
@@ -58,9 +57,8 @@
   .navigation ul {
     display: flex;
     justify-content: flex-start;
-    max-width: 900px;
     margin: 0 auto;
-    padding-left: 10%;
+    padding-left: 16%;
   }
 
   /****************************  MULTI-COLUMN LAYOUT ********************************/
@@ -87,5 +85,10 @@
   nav a:hover {
     background-color: var(--accent-color);
     color: white;
+  }
+
+  /****************************  FOOTER ********************************/
+  footer {
+    max-width: 100%;
   }
 }
