@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #3d405b;
+  --accent-color: #e07a5f;
+  --secondary-color: #f4f1de;
+  --text-color: #2f3144;
+  --gray-light: #eeeeee;
+  --completed-bg: #ffe8d6;
+  --heading-font: "Josefin Sans", sans-serif;
+}
+@media only screen and (min-width: 38rem) {
+  main,
+  nav,
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 15%;
+  }
+
+  /****************************  MENU HAMBURGER  ********************************/
+
+  .hamburger {
+    display: none;
+  }
+
+  /****************************  NAVIGATION  ********************************/
+
+  .navigation {
+    display: block;
+    background-color: var(--text-color);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .navigation a {
+    border: none;
+    padding: 1rem 2rem;
+  }
+
+  .navigation a:hover {
+    background-color: transparent;
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+
+  .navigation li.current a {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: transparent;
+  }
+
+  .navigation ul {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 10%;
+  }
+
+  /****************************  MULTI-COLUMN LAYOUT ********************************/
+  .main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+
+  .certificate {
+    grid-column: 1 / -1;
+  }
+
+  .about p {
+    margin-bottom: 1rem;
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  nav a:hover {
+    background-color: var(--accent-color);
+    color: white;
+  }
+}

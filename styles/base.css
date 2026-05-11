@@ -1,0 +1,218 @@
+/*---------------------------  COLOR SCHEME --------------------------------*/
+:root {
+  --primary-color: #3d405b;
+  --accent-color: #e07a5f;
+  --secondary-color: #f4f1de;
+  --text-color: #2f3144;
+  --gray-light: #eeeeee;
+  --completed-bg: #ffe8d6;
+  --heading-font: "Josefin Sans", sans-serif;
+}
+
+/****************************  SITE WIDE ********************************/
+* {
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: white;
+}
+
+/****************************  HEADER ********************************/
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+header img {
+  width: 50px;
+  height: auto;
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/****************************  HAMBURGER  ********************************/
+.hamburger {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger::after {
+  content: "\2630";
+}
+
+.hamburger.show::after {
+  content: "\2715";
+}
+
+/****************************  NAVIGATION ********************************/
+.navigation {
+  background-color: var(--text-color);
+  display: none;
+}
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  transition: background 0.3s;
+}
+
+.navigation a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.navigation li.current a {
+  background-color: transparent;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/****************************  MAIN CONTENT ********************************/
+main {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--accent-color);
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--gray-light);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem;
+  margin: -1rem -1rem 1rem -1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/*************************  STUDENT PHOTO *****************************/
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  border-radius: 8px;
+  border: 1px solid var(--gray-light);
+  height: auto;
+  max-width: 100%;
+}
+
+/*************************  COURSE SECTION & FILTERING *****************************/
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#course-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+/****************************  COURSE CARD STYLES ********************************/
+.course-card {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--gray-light);
+  font-weight: bold;
+}
+
+.course-card.completed {
+  background-color: var(--completed-bg);
+  border-color: var(--accent-color);
+  color: var(--text-color);
+}
+
+/****************************  FOOTER ********************************/
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+
+.social {
+  margin-bottom: 1rem;
+}
+
+.social img {
+  width: 32px;
+  filter: invert(1);
+  margin: 0 10px;
+}
+
+#lastModified {
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-weight: 100;
+}

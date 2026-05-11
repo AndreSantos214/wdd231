@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 231 - Web Frontend Development I - Course Home Page</title>
+  <meta name="description" content="Course home page for WDD 231, demosntrating HTML, CSS, and JavaScript skills.">
+  <meta name="author" content="André de Oliveira Santos">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <img src="images/home.svg" alt="Site Logo" width="50" height="50">
+    <span>André Santos</span>
+    <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+  </header>
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="#">Home</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Home</h1>
+    <div class="main-container">
+      <section class="card about">
+        <h2>About Me</h2>
+        <p>Hello! I am André de Oliveira Santos. Originally from Brazil, Iam 24 year old and currently living in beautiful Portugal. I have a deep passion for studying, constantly discovering new things, and writing lines of code.</p>
+        <p>When I am not in front of a computer screen building web projects, yuu can usually find me indulging in one of my favorite hobbies: playing the piano. I belive that both coding and music require a great mix of logic, dedication, and creativity!</p>
+      </section>
+
+      <section class="card photo">
+        <h2>Student Photo</h2>
+        <img src="images/student-photo.jpeg" alt="Student Photo" width="200" height="250" loading="lazy">
+      </section>
+
+      <section class="card certificate">
+        <h2>Web Certificate Courses</h2>
+        <div class="filter-buttons">
+          <button id="all">All</button>
+          <button id="cse">CSE</button>
+          <button id="wdd">WDD</button>
+        </div>
+        <div id="course-container"></div>
+        <p id="total-credits"></p>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="https://github.com/AndreSantos214/wdd131" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+      <a href="https://www.linkedin.com/in/andré-de-oliveira-santos-b03183116?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"></a>
+      <a href="https://www.facebook.com/share/18oWKUJ5Pt/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> | André de Oliveira Santos | Lisbon, Portugal</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
