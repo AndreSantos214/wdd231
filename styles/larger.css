@@ -1,12 +1,3 @@
-:root {
-  --primary-color: #3d405b;
-  --accent-color: #e07a5f;
-  --secondary-color: #f4f1de;
-  --text-color: #2f3144;
-  --gray-light: #eeeeee;
-  --completed-bg: #ffe8d6;
-  --heading-font: "Josefin Sans", sans-serif;
-}
 @media only screen and (min-width: 38rem) {
   main,
   nav {
@@ -16,9 +7,10 @@
 
   header {
     display: flex;
+    justify-content: center;
     max-width: 100%;
     margin: 0;
-    padding-left: 15%;
+    padding-right: 5.5rem;
   }
 
   /****************************  MENU HAMBURGER  ********************************/
@@ -56,9 +48,8 @@
 
   .navigation ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0 auto;
-    padding-left: 16%;
   }
 
   /****************************  MULTI-COLUMN LAYOUT ********************************/
