@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Nubank",
+    "address": "Av. Rebouças, 3970 - Pinheiros, São Paulo - SP",
+    "phone": "+55 (11) 2039-4000",
+    "website": "https://nubank.com.br",
+    "image": "nubank.webp",
+    "membershipLevel": 3,
+    "tagline": "The future of financial services is purple."
+  },
+  {
+    "name": "Mercado Livre",
+    "address": "Av. das Nações Unidas, 3003 - Bonfim, Osasco - SP",
+    "phone": "+55 (11) 2543-5000",
+    "website": "https://www.mercadolivre.com.br",
+    "image": "mercadolivre.webp",
+    "membershipLevel": 3,
+    "tagline": "The best is coming."
+  },
+  {
+    "name": "Natura",
+    "address": "Av. Alexandre Colares, 1180 - Vila Jaguara, São Paulo - SP",
+    "phone": "+55 (11) 4153-8000",
+    "website": "https://www.natura.com.br",
+    "image": "natura.webp",
+    "membershipLevel": 3,
+    "tagline": "The world is more beautiful with you."
+  },
+  {
+    "name": "Havaianas",
+    "address": "Av. Dr. Cardoso de Melo, 1355 - Vila Olímpia, São Paulo - SP",
+    "phone": "+55 (11) 3045-2000",
+    "website": "https://havaianas.com.br",
+    "image": "havaianas.webp",
+    "membershipLevel": 2,
+    "tagline": "Designed for a free and colorful life."
+  },
+  {
+    "name": "Embraer",
+    "address": "Av. Brigadeiro Faria Lima, 2170 - Putim, São José dos Campos - SP",
+    "phone": "+55 (12) 3927-1000",
+    "website": "https://embraer.com",
+    "image": "embraer.webp",
+    "membershipLevel": 2,
+    "tagline": "Challenge the challenging."
+  },
+  {
+    "name": "Magazine Luiza",
+    "address": "Rua Voluntários da Franca, 1465 - Centro, Franca - SP",
+    "phone": "+55 (16) 3711-2000",
+    "website": "https://www.magazineluiza.com.br",
+    "image": "magalu.webp",
+    "membershipLevel": 1,
+    "tagline": "Come be happy."
+  },
+  {
+    "name": "iFood",
+    "address": "Av. dos Autonomistas, 1496 - Vila Yara, Osasco - SP",
+    "phone": "+55 (11) 4003-0000",
+    "website": "https://www.ifood.com.br",
+    "image": "ifood.webp",
+    "membershipLevel": 1,
+    "tagline": "Living is unmissable."
+  },
+  {
+    "name": "Itaú Unibanco",
+    "address": "Praça Alfredo Egydio de Souza Aranha, 100 - Jabaquara, São Paulo - SP",
+    "phone": "+55 (11) 4004-4828",
+    "website": "https://www.itau.com.br",
+    "image": "itau.webp",
+    "membershipLevel": 3,
+    "tagline": "Made with you."
+  },
+  {
+    "name": "Ambev",
+    "address": "Rua Dr. Renato Paes de Barros, 1017 - Itaim Bibi, São Paulo - SP",
+    "phone": "+55 (11) 2122-1414",
+    "website": "https://www.ambev.com.br",
+    "image": "ambev.webp",
+    "membershipLevel": 3,
+    "tagline": "We dream big to create a future with more cheers."
+  }
+]

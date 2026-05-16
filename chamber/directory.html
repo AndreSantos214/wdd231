@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brazil Business Chamber - Member Directory</title>
+  <meta name="description" content="Explore the official business directory of the Brazil Business Chamber. Connect with top-tier organization and market leaders.">
+  <meta name="author" content="André de Oliveira Santos">
+
+  <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+
+  <meta property="og:title" content="Brazil Business Chamber - Directory">
+  <meta property="og:description" content="Discover leading companies driving economic growth. View our official business members directory">
+  <meta property="og:image" content="images/logo.png">
+  <meta property="og:url" content="https://andresantos214.github.io/wdd231/chamber/directory.html">
+  <meta property="og:" content="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="images/logo.webp" alt="Brazil Business Chamber Logo" class="logo" width="50" height="50">
+        <div>
+          <h1>Brazil Chamber</h1>
+          <p class="subtitle">Foster. Advocate. Connect.</p>
+        </div>
+      </div>
+      <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+      <nav id="navigation-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="directory-hero">
+      <h2>Member Directory</h2>
+      <p>Connecting market leaders, cultivating premium networking, and fostering sustainable national growth.</p>
+
+      <div class="view-controls">
+        <button id="grid-view-btn" class="active-view" aria-label="Grid View">
+          <span>&#8862;</span> Grid
+        </button>
+        <button id="list-view-btn" aria-label="List View">
+          <span>&#9776;</span> List
+        </button>
+      </div>
+    </section>
+
+    <div id="members-container" class="grid-layout">
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-contact">
+        <h3>Brazil Chamber of Commerce</h3>
+        <p>Av. Paulista, 1000 - Bela Vista</p>
+        <p>São Paulo, SP, Brazil</p>
+        <p>Email: contact@brazilchamber.org</p>
+        <p>Phone: +55 (11) 3003-1234</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/AndreSantos214/wdd131" target="_blank"><img src="images/github.svg" alt="André Santos Github Profile" width="16" height="16"></a>
+        <a href="https://www.linkedin.com/in/andré-de-oliveira-santos-b03183116?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img src="images/linkedin.svg" alt="André Santos Linkedin Profile" width="16" height="16"></a>
+        <a href="https://www.facebook.com/share/18oWKUJ5Pt/" target="_blank"><img src="images/facebook.svg" alt="André Santos Facebook Profile" width="16" height="16"></a>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Brazil Chamber | WDD 231 Class Project | <span class="author-name">André de Oliveira Santos</span></p>
+      <p class="last-modified">Last Modification: <span id="last-modified-date"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+</body>
+
+</html>

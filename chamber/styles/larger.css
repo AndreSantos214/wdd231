@@ -1,0 +1,88 @@
+@media (min-width: 768px) {
+  /* **************** HEADER & NAVIGATION (Desktop Layout) *******************/
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+    margin-top: 0;
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  nav ul li a {
+    border-bottom: none;
+    padding: 5px 0;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: var(--transition-smooth);
+  }
+
+  nav ul li a:hover::after,
+  nav ul li a.active::after {
+    width: 100%;
+  }
+
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: var(--secondary-color);
+    padding-left: 0;
+  }
+
+  /* ************** DYNAMIC DIRECTORY LAYOUTS (Desktop Grid) ******************/
+  .grid-layout {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .list-layout .member-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-left: 5px solid var(--secondary-color);
+  }
+
+  .list-layout .member-card h3 {
+    flex: 1;
+  }
+
+  .list-layout .member-info {
+    flex: 1;
+    text-align: left;
+  }
+
+  /* **************** FOOTER (Desktop Layout) ******************/
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
