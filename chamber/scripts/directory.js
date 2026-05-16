@@ -62,7 +62,7 @@ function displayMembers(members) {
     logo.setAttribute("width", "120");
     logo.setAttribute("height", "120");
 
-    let name = document.createElement("h3");
+    let name = document.createElement("h2");
     name.textContent = member.name;
 
     let tagline = document.createElement("p");

@@ -215,7 +215,7 @@ main {
   filter: grayscale(20%);
 }
 
-.grid-layout .member-card h3 {
+.grid-layout .member-card h2 {
   font-family: var(--font-titles);
   font-size: 1.4rem;
   margin: 10px 0 5px 0;
@@ -279,7 +279,7 @@ main {
   display: none;
 }
 
-.list-layout .member-card h3 {
+.list-layout .member-card h2 {
   margin: 0;
   font-size: 1.2rem;
   font-family: var(--font-body);
