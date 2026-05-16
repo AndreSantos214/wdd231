@@ -361,3 +361,7 @@ footer {
   font-style: italic;
   color: #cccccc;
 }
+
+#members-container {
+  min-height: 800px;
+}
