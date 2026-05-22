@@ -87,7 +87,7 @@ function displayMembers(members) {
       <p><strong>Address:</strong> ${member.address}</p>
       <p><strong>Phone:</strong> ${member.phone}</p>
       <p><strong>Website:</strong> <a href="${member.website}" target="_blank">Visit Site</a></p>
-      <span class="badge ${levelClass}">${levelText}</span>
+      <span class="member-badge ${levelClass}">${levelText}</span>
     `;
 
     card.appendChild(logo);

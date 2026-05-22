@@ -63,7 +63,7 @@
     border-left: 5px solid var(--secondary-color);
   }
 
-  .list-layout .member-card h3 {
+  .list-layout .member-card h2 {
     flex: 1;
   }
 
@@ -84,5 +84,42 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  /* **************** HOME LAYOUT (Desktop Grid) ******************/
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .weather-card-container {
+    margin-bottom: 0;
+  }
+
+  /* **************** HERO SECTION (Desktop Layout) ******************/
+  .hero-image {
+    height: 450px;
+  }
+
+  .cta-box {
+    top: 50%;
+    bottom: auto;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 400px;
+    border-radius: 6px;
+    text-align: left;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .cta-box h2 {
+    font-size: 2rem;
+  }
+
+  .events-card-container h2 {
+    text-align: left;
   }
 }
