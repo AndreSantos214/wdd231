@@ -28,29 +28,18 @@ let isCelsius = false;
 // Async Function to Fetch Data
 async function fetchWeather() {
   try {
-    // Send the request to the API and wait for the network response
     const response = await fetch(weatherUrl);
 
-    //Check if the server responded successfully
-    if (response.ok === false) {
-      console.warn(
-        "Server responded, but there was a problem with the request",
-      );
-      return;
+    if (response.ok) {
+      const data = await response.json();
+      console.log(data); //testing only
+      weatherDataGlobal = data;
+      displayWeather();
+    } else {
+      throw Error(await response.text());
     }
-
-    // Extract and convert the raw response data into a readable JSON object
-    const weatherData = await response.json();
-
-    // Save the fresh data into our global variable to use it later
-    weatherDataGlobal = weatherData;
-
-    displayWeather();
   } catch (error) {
-    console.error(
-      "Critical error while communicating with the Weather API:",
-      error,
-    );
+    console.error("Critical error while communicating with the Weather API");
   }
 }
 
@@ -84,9 +73,11 @@ function displayWeather() {
     isCelsius,
   );
 
-  const iconImage = document.getElementById("weather-icon");
-  iconImage.src = `https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`;
-  iconImage.alt = current.weather[0].description;
+  const iconSrc = `https://openweathermap.org/img/wn/${current.weather[0].icon}@2x.png`;
+
+  const myGraphic = document.getElementById("weather-icon");
+  myGraphic.setAttribute("src", iconSrc);
+  myGraphic.setAttribute("alt", current.weather[0].description);
 
   // 3-day forecast tracking
   const forecastContainer = document.getElementById("forecast-container");
