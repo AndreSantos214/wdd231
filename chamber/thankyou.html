@@ -4,16 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>W03: Chamber Home Page</title>
-  <meta name="description" content="Welcome to the Brazil Business Chamber. Connecting leaders, driving economic growth, and fostering premium nteworking">
+  <title>Thank You - Brazil Chamber</title>
+  <meta name="description" content="Thank you for applying to join the Brazil Business Chamber.">
   <meta name="author" content="André de Oliveira Santos">
 
   <link rel="icon" href="images/favicon.webp" type="image/x-icon">
-
-  <meta property="og:title" content="Brazil Business Chamber - Home">
-  <meta property="og:description" content="Join leading organizations driving market growth. Connect with our premium business network.">
-  <meta property="og:image" content="https://andresantos214.github.io/wdd231/chamber/images/logo.webp">
-  <meta property="og:url" content="https://andresantos214.github.io/wdd231/chamber/index.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +18,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <script src="scripts/home.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
 </head>
 
 <body>
@@ -37,10 +32,12 @@
           <p class="subtitle">Foster. Advocate. Connect.</p>
         </div>
       </div>
+
       <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+
       <nav id="navigation-menu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
           <li><a href="#">Discover</a></li>
@@ -50,59 +47,12 @@
   </header>
 
   <main>
-    <section class="hero-section">
-      <img src="images/hero.webp" alt="Brazil Chamber Banner" class="hero-image" loading="eager" fetchpriority="high" width="1200" height="400">
-      <div class="cta-box">
-        <h1>Empowering Business Growth</h1>
-        <p>Connect with top-tier organizations and market leaders in Brazil.</p>
-        <a href="#" class="cta-button">Join the Chamber</a>
-      </div>
+    <section class="thankyou-section">
+      <h1>Thank You!</h1>
+      <p>Your membership application was submitted successfully.</p>
+
+      <div id="thankyou-results"></div>
     </section>
-
-    <div class="home-grid">
-
-      <section class="weather-card-container">
-        <h2>Local Climate</h2>
-        <div class="weather-box">
-          <h3 id="weather-location">Loading...</h3>
-
-          <div class="weather-current">
-            <img id="weather-icon" src="images/weather-icon.svg" alt="" width="50" height="50">
-            <div class="temp-wrapper">
-              <p id="weather-temp">--&deg;F</p>
-              <p id="weather-desc">--</p>
-            </div>
-          </div>
-
-          <button id="toggle-units-btn" class="weather-toggle-btn">Convert to &deg;C</button>
-
-          <hr class="section-divider">
-          <h4>3-Day Forecast</h4>
-          <div id="forecast-container"></div>
-        </div>
-      </section>
-
-      <section class="events-card-container">
-        <h2>Upcoming Events</h2>
-        <div class="event-box">
-          <div class="event-item">
-            <h3>Business Summit 2026</h3>
-            <p class="event-date">June 15, 2026</p>
-          </div>
-          <div class="event-item">
-            <h3>Premium Networking Strategy</h3>
-            <p class="event-date">July 02, 2026</p>
-          </div>
-        </div>
-      </section>
-
-    </div>
-    <section class="spotlight-section">
-      <h2>Featured Members</h2>
-      <div id="spotlight-container" class="grid-layout">
-      </div>
-    </section>
-
   </main>
 
   <footer>
@@ -114,18 +64,22 @@
         <p>Email: contact@brazilchamber.org</p>
         <p>Phone: +55 (11) 3003-1234</p>
       </div>
+
       <div class="footer-socials">
         <a href="https://github.com/AndreSantos214/wdd131" target="_blank"><img src="images/github.svg" alt="André Santos Github Profile" width="16" height="16"></a>
         <a href="https://www.linkedin.com/in/andré-de-oliveira-santos-b03183116?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img src="images/linkedin.svg" alt="André Santos Linkedin Profile" width="16" height="16"></a>
         <a href="https://www.facebook.com/share/18oWKUJ5Pt/" target="_blank"><img src="images/facebook.svg" alt="André Santos Facebook Profile" width="16" height="16"></a>
       </div>
     </div>
+
     <hr class="footer-divider">
+
     <div class="footer-bottom">
       <p>&copy; <span id="current-year"></span> Brazil Chamber | WDD 231 Class Project | <span class="author-name">André de Oliveira Santos</span></p>
       <p class="last-modified">Last Modification: <span id="last-modified-date"></span></p>
     </div>
   </footer>
+
 </body>
 
 </html>

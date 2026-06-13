@@ -122,4 +122,11 @@
   .events-card-container h2 {
     text-align: left;
   }
+
+  /* **************** JOIN PAGE DESKTOP LAYOUT ******************/
+  .join-page-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
 }

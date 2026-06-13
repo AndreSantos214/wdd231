@@ -213,3 +213,35 @@ footer {
   margin-top: 0.5rem;
   font-weight: 100;
 }
+
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 0 3rem rgb(0 0 0 / 40%);
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(0 0 0 / 20%);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+dialog h2 {
+  margin-top: 0;
+}
+
+.course-card {
+  cursor: pointer;
+}

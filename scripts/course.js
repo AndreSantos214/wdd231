@@ -69,10 +69,31 @@ const courses = [
 
 const courseContainer = document.getElementById("course-container");
 const totalCreditsElement = document.getElementById("total-credits");
+const courseDetails = document.getElementById("course-details");
 
 const allBtn = document.getElementById("all");
 const cseBtn = document.getElementById("cse");
 const wddBtn = document.getElementById("wdd");
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits:</strong> ${course.credits}</p>
+    <p><strong>Certificate:</strong> ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+  `;
+
+  courseDetails.showModal();
+
+  const closeButton = document.getElementById("closeModal");
+
+  closeButton.addEventListener("click", function () {
+    courseDetails.close();
+  });
+}
 
 function displayCourses(filteredCourses) {
   courseContainer.innerHTML = "";
@@ -93,6 +114,11 @@ function displayCourses(filteredCourses) {
     } else {
       courseCard.innerHTML = `<p>${course.subject} ${course.number}</p>`;
     }
+
+    courseCard.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
+
     courseContainer.appendChild(courseCard);
   });
 }
