@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Santos Dev Studio | Contact</title>
+  <meta name="description" content="Contact André Santos for web development, automation, academic, or freelance opportunities.">
+  <meta name="author" content="André de Oliveira Santos">
+
+  <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+
+  <meta property="og:title" content="Andre Santos Dev Studio - Contact">
+  <meta property="og:description" content="Contact André Santos for web development and digital solution opportunities.">
+  <meta property="og:image" content="https://andresantos214.github.io/wdd231/final/images/logo.webp">
+  <meta property="og:url" content="https://andresantos214.github.io/wdd231/final/contact.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-area">
+        <img src="images/logo.webp" alt="Andre Santos Dev Studio logo" width="80" height="80">
+      </a>
+
+      <button id="menu-button" aria-label="Open navigation menu">&#9776;</button>
+
+      <nav id="navigation-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <button id="theme-button" type="button" aria-label="Change theme">☼</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="small-title">Contact</p>
+      <h1>Let’s Work Together</h1>
+      <p>
+        Use this form to send a project idea, academic opportunity, freelance request,
+        or simple message.
+      </p>
+    </section>
+
+    <section class="contact-page">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          I am currently growing as a developer and looking for opportunities to learn,
+          build, collaborate, and solve real problems with technology.
+        </p>
+
+        <div class="contact-detail">
+          <h3>Focus Areas</h3>
+          <p>Frontend development, automation, APIs, databases, low-code solutions, and AI tools.</p>
+        </div>
+
+        <div class="contact-detail">
+          <h3>Current Learning Path</h3>
+          <p>Java, stronger JavaScript foundations, and better project organization.</p>
+        </div>
+      </div>
+
+      <form method="get" action="thanks.html" class="contact-form">
+        <label>
+          Full Name
+          <input type="text" name="name" title="Enter your full name" autocomplete="name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+        </label>
+
+        <label>
+          Project Type
+          <select name="project-type" title="Select the project type" required>
+            <option value="">Please Select</option>
+            <option value="Website">Website</option>
+            <option value="Automation">Automation</option>
+            <option value="School Project">School Project</option>
+            <option value="Freelance Opportunity">Freelance Opportunity</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" title="Enter your message" required></textarea>
+        </label>
+
+        <input type="hidden" name="submitted-date" id="submitted-date">
+
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Andre Santos Dev Studio</p>
+      <p>WDD 231 Individual Project</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p>Last Modification: <span id="last-modified-date"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("submitted-date").value = new Date();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "HTML",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "status": "Active Skill",
+    "description": "Used to structure web pages with semantic elements, forms, images, links, and accessible content."
+  },
+  {
+    "name": "CSS",
+    "category": "Frontend",
+    "level": "Intermediate",
+    "status": "Active Skill",
+    "description": "Used to style responsive layouts, create visual designs, organize pages, and improve user experience."
+  },
+  {
+    "name": "JavaScript",
+    "category": "Frontend",
+    "level": "Beginner",
+    "status": "Active Skill",
+    "description": "Used to create interactive pages, handle events, fetch data, build cards, use modals, and work with localStorage."
+  },
+  {
+    "name": "C#",
+    "category": "Programming",
+    "level": "Beginner",
+    "status": "Active Skill",
+    "description": "Used to understand programming logic, object-oriented concepts, and application development fundamentals."
+  },
+  {
+    "name": "Python",
+    "category": "Programming",
+    "level": "Beginner",
+    "status": "Active Skill",
+    "description": "Used for programming practice, automation ideas, data handling, and learning general problem solving."
+  },
+  {
+    "name": "OutSystems",
+    "category": "Programming",
+    "level": "Beginner",
+    "status": "Active Skill",
+    "description": "Used to build low-code applications, connect screens, create logic flows, and work with data models."
+  },
+  {
+    "name": "ChatGPT",
+    "category": "AI Tools",
+    "level": "Intermediate",
+    "status": "Active Tool",
+    "description": "Used to study programming, plan projects, review code, generate ideas, and improve development workflows."
+  },
+  {
+    "name": "Claude",
+    "category": "AI Tools",
+    "level": "Intermediate",
+    "status": "Active Tool",
+    "description": "Used as an AI assistant for writing, planning, analyzing ideas, and comparing technical solutions."
+  },
+  {
+    "name": "Gemini",
+    "category": "AI Tools",
+    "level": "Intermediate",
+    "status": "Active Tool",
+    "description": "Used as an AI tool to support research, learning, and productivity during development projects."
+  },
+  {
+    "name": "N8N",
+    "category": "Automation",
+    "level": "Intermediate",
+    "status": "Active Tool",
+    "description": "Used to understand workflow automation, connect services, and create simple automated processes."
+  },
+  {
+    "name": "APIs",
+    "category": "Automation",
+    "level": "Intermediate",
+    "status": "Active Skill",
+    "description": "Used to connect applications with external data, send requests, receive responses, and display dynamic information."
+  },
+  {
+    "name": "Git",
+    "category": "Programming",
+    "level": "Beginner",
+    "status": "Active Skill",
+    "description": "Used for version control, tracking changes, and managing project history during development."
+  },
+  {
+    "name": "GitHub",
+    "category": "Programming",
+    "level": "Beginner",
+    "status": "Active Tool",
+    "description": "Used to store repositories, publish projects with GitHub Pages, and share code online."
+  },
+  {
+    "name": "SQL",
+    "category": "Database",
+    "level": "Beginner",
+    "status": "Active Skill",
+    "description": "Used to query, organize, filter, and manage data in relational databases."
+  },
+  {
+    "name": "Java",
+    "category": "Learning",
+    "level": "Planned",
+    "status": "Learning Path",
+    "description": "Part of my learning roadmap to improve programming fundamentals and object-oriented development."
+  }
+]

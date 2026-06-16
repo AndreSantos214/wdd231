@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Santos Dev Studio | Thank You</title>
+  <meta name="description" content="Thank you for contacting Andre Santos Dev Studio.">
+  <meta name="author" content="André de Oliveira Santos">
+
+  <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+
+  <meta property="og:title" content="Andre Santos Dev Studio - Thank You">
+  <meta property="og:description" content="Thank you for sending a message to André Santos.">
+  <meta property="og:image" content="https://andresantos214.github.io/wdd231/final/images/logo.webp">
+  <meta property="og:url" content="https://andresantos214.github.io/wdd231/final/thanks.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/thanks.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-area">
+        <img src="images/logo.webp" alt="Andre Santos Dev Studio logo" width="80" height="80">
+      </a>
+
+      <button id="menu-button" aria-label="Open navigation menu">&#9776;</button>
+
+      <nav id="navigation-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="theme-button" type="button" aria-label="Change theme">☼</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="small-title">Message Sent</p>
+      <h1>Thank You!</h1>
+      <p>
+        Your message was submitted successfully. Here is a copy of the information sent through the form.
+      </p>
+    </section>
+
+    <section class="thanks-section">
+      <div id="thanks-results"></div>
+
+      <a href="index.html" class="primary-button">Back to Home</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Andre Santos Dev Studio</p>
+      <p>WDD 231 Individual Project</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p>Last Modification: <span id="last-modified-date"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

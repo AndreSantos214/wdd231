@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andre Santos Dev Studio | Skills</title>
+  <meta name="description" content="Explore André Santos technical skills in frontend development, automation, APIs, databases, AI tools, and programming.">
+  <meta name="author" content="André de Oliveira Santos">
+
+  <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+
+  <meta property="og:title" content="Andre Santos Dev Studio - Skills">
+  <meta property="og:description" content="Technical skills and tools used by André Santos.">
+  <meta property="og:image" content="https://andresantos214.github.io/wdd231/final/images/logo.webp">
+  <meta property="og:url" content="https://andresantos214.github.io/wdd231/final/skills.html">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/main.js" type="module"></script>
+  <script src="scripts/skills.js" type="module"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo-area">
+        <img src="images/logo-small.webp" alt="Andre Santos Dev Studio logo" width="150" height="82">
+      </a>
+
+      <button id="menu-button" aria-label="Open navigation menu">&#9776;</button>
+
+      <nav id="navigation-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button id="theme-button" type="button" aria-label="Change theme">☼</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="small-title">Technical Skills</p>
+      <h1>My Skills and Tools</h1>
+      <p>
+        These are the technologies, tools, and platforms I currently use or study
+        as I grow as a developer.
+      </p>
+    </section>
+
+    <section class="filter-section">
+      <h2>Filter Skills</h2>
+
+      <div class="filter-buttons">
+        <button type="button" class="filter-button active-filter" data-category="All">All</button>
+        <button type="button" class="filter-button" data-category="Frontend">Frontend</button>
+        <button type="button" class="filter-button" data-category="Programming">Programming</button>
+        <button type="button" class="filter-button" data-category="Automation">Automation</button>
+        <button type="button" class="filter-button" data-category="AI Tools">AI Tools</button>
+        <button type="button" class="filter-button" data-category="Database">Database</button>
+        <button type="button" class="filter-button" data-category="Learning">Learning</button>
+      </div>
+    </section>
+
+    <section id="skills-container" class="skills-container"></section>
+
+    <dialog id="skill-modal">
+      <button type="button" id="close-modal" aria-label="Close skill details">×</button>
+      <div id="modal-content"></div>
+    </dialog>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Andre Santos Dev Studio</p>
+      <p>WDD 231 Individual Project</p>
+      <p><a href="attributions.html">Attributions</a></p>
+      <p>Last Modification: <span id="last-modified-date"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

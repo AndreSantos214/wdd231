@@ -1,0 +1,132 @@
+@media (min-width: 768px) {
+  /* HEADER */
+  .header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+  }
+
+  .logo-area {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    z-index: 2;
+  }
+
+  .logo-area img {
+    width: 150px;
+    height: auto;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  nav {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  nav ul {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    border-bottom: none;
+    padding: 0.5rem 0;
+  }
+
+  #theme-button {
+    grid-column: 3;
+    justify-self: end;
+    margin: 0;
+    background: none;
+    color: var(--text-muted);
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+
+  #theme-button:hover {
+    color: var(--accent-blue);
+  }
+
+  /* MAIN */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  /* HERO */
+  .hero-section {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: center;
+    min-height: 520px;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+  }
+
+  /* PROJECTS */
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-content {
+    flex: 1;
+  }
+
+  /* SECTIONS */
+  .about-section,
+  .projects-preview,
+  .skills-preview,
+  .contact-preview {
+    padding: 2rem;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* SKILLS PAGE */
+  .page-title h1 {
+    font-size: 3.2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 650px;
+  }
+
+  /* CONTACT PAGE */
+  .contact-page {
+    grid-template-columns: 1fr 1.4fr;
+    align-items: start;
+  }
+}

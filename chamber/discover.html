@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>W02 Assignment: Chamber Directory Page</title>
-  <meta name="description" content="Explore the official business directory of the Brazil Business Chamber. Connect with top-tier organization and market leaders.">
+  <title>Discover São Paulo - Brazil Chamber</title>
+  <meta name="description" content="Discover important places, cultural areas, and business attractions in São Paulo with the Brazil Business Chamber.">
   <meta name="author" content="André de Oliveira Santos">
 
   <link rel="icon" href="images/favicon.webp" type="image/x-icon">
 
-  <meta property="og:title" content="Brazil Business Chamber - Directory">
-  <meta property="og:description" content="Discover leading companies driving economic growth. View our official business members directory">
+  <meta property="og:title" content="Brazil Business Chamber - Discover São Paulo">
+  <meta property="og:description" content="Explore cultural, business, and historical places in São Paulo.">
   <meta property="og:image" content="https://andresantos214.github.io/wdd231/chamber/images/logo.webp">
-  <meta property="og:url" content="https://andresantos214.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://andresantos214.github.io/wdd231/chamber/discover.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
@@ -37,35 +37,31 @@
           <p class="subtitle">Foster. Advocate. Connect.</p>
         </div>
       </div>
+
       <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+
       <nav id="navigation-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="directory-hero">
-      <h1>Member Directory</h1>
-      <p>Connecting market leaders, cultivating premium networking, and fostering sustainable national growth.</p>
-
-      <div class="view-controls">
-        <button id="grid-view-btn" class="active-view" aria-label="Grid View">
-          <span>&#8862;</span> Grid
-        </button>
-        <button id="list-view-btn" aria-label="List View">
-          <span>&#9776;</span> List
-        </button>
-      </div>
+    <section class="discover-hero">
+      <h1>Discover São Paulo</h1>
+      <p>
+        Explore some of the cultural, historical, and business-friendly places that make São Paulo one of Brazil's most important cities.
+      </p>
     </section>
 
-    <div id="members-container" class="grid-layout">
-    </div>
+    <section id="visitor-message" class="visitor-message"></section>
+
+    <section class="discover-layout" id="discover-cards"></section>
   </main>
 
   <footer>
@@ -77,18 +73,22 @@
         <p>Email: contact@brazilchamber.org</p>
         <p>Phone: +55 (11) 3003-1234</p>
       </div>
+
       <div class="footer-socials">
         <a href="https://github.com/AndreSantos214/wdd131" target="_blank"><img src="images/github.svg" alt="André Santos Github Profile" width="16" height="16"></a>
         <a href="https://www.linkedin.com/in/andré-de-oliveira-santos-b03183116?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><img src="images/linkedin.svg" alt="André Santos Linkedin Profile" width="16" height="16"></a>
         <a href="https://www.facebook.com/share/18oWKUJ5Pt/" target="_blank"><img src="images/facebook.svg" alt="André Santos Facebook Profile" width="16" height="16"></a>
       </div>
     </div>
+
     <hr class="footer-divider">
+
     <div class="footer-bottom">
       <p>&copy; <span id="current-year"></span> Brazil Chamber | WDD 231 Class Project | <span class="author-name">André de Oliveira Santos</span></p>
       <p class="last-modified">Last Modification: <span id="last-modified-date"></span></p>
     </div>
   </footer>
+
 </body>
 
 </html>
